@@ -1,19 +1,30 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
-/**
- * main - Entry point
+#include <stdio.h>
+/*
+ * 2-print_alphabet.c
  *
- * Return: Always 0 (Success)
+ * Description:
+ * This program prints
+ * all the lower case characters in
+ * the alphabet, using putchar()
+ *
  */
+
+/**
+  * main - this is the main function that runs everything
+  * @void: no arguments passed in
+  *
+  * Return: 0
+  */
 int main(void)
 {
-	char a;
+	char letter;
+	int i;
 
+	letter = 'a';
 
-	for (a = 'a'; a <= 'z'; a++)
-		putchar(a);
-	putchar("\n");
-
+	for (i = 0; i < 26; i++)
+		putchar(letter + i);
+	putchar('\n');
 	return (0);
 }
