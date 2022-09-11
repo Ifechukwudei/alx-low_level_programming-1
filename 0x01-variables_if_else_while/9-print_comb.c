@@ -1,30 +1,18 @@
 #include <stdio.h>
-/*
- * 9-print_comb.c
- *
- * Description:
- * This program prints
- * all the single digit decimals
- * with commas in-between
- *
- */
-
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * Return: alway returns 0
+ *
  */
 int main(void)
 {
-	char num;
 	int i;
 
-	num = '0';
-
-	for (i = 0; i < 10; i++)
+	for (i = 10; i < 20; i++)
 	{
-		putchar(num + i);
-		if (!(i == 9))
+		putchar((i % 10) + '0');
+		if (i != 19)
 		{
 			putchar(',');
 			putchar(' ');
